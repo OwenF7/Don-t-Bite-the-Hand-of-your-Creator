@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4113599005361877366}
   - component: {fileID: 1061067295531581139}
   - component: {fileID: 2980640080925903385}
+  - component: {fileID: 1875767987449279211}
   m_Layer: 0
   m_Name: Barrack
   m_TagString: Untagged
@@ -100,3 +101,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1875767987449279211
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3629232988728781772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7450741763379908841, guid: 61c56bab414735c4c94ba10d4c42f602, type: 3}
