@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class BeginningTree : MonoBehaviour
 {
     public GameObject introTreeDialogue;
+    public GameObject tutorialText; 
     public GameObject hUD;
     public GameObject interact;
     public GameObject returnToTree;
@@ -18,6 +19,9 @@ public class BeginningTree : MonoBehaviour
     void Start()
     {
         introTreeDialogue.SetActive(true);
+
+        tutorialText.SetActive(false); 
+
         returnToTree.SetActive(false);
 
         playerSphere.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
@@ -30,9 +34,19 @@ public class BeginningTree : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F) == true)
             {
-                playerSphere.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                introTreeDialogue.SetActive(false); 
 
-                introTreeDialogue.SetActive(false);
+                tutorialText.SetActive(true); 
+            }
+        }
+
+        if (tutorialText.activeInHierarchy == true)
+        {
+            if (Input.GetKeyDown(KeyCode.G) == true)
+            {
+                tutorialText.SetActive(false);
+
+                playerSphere.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             }
         }
 
