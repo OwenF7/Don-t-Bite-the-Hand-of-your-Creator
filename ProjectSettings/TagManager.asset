@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - bucket
+  - Plague
+  - NPC1
+  - Dad
+  - Wife
+  - Priest
+  - Mob
+  - WellMan
   layers:
   - Default
   - TransparentFX
