@@ -906,14 +906,15 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 377857791}
   m_Father: {fileID: 470584464}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 194.00703, y: -65.95003}
-  m_SizeDelta: {x: 410.74243, y: 130.82}
+  m_AnchoredPosition: {x: 194.00703, y: -13.2404}
+  m_SizeDelta: {x: 410.7424, y: 25.4006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &95184441
 MonoBehaviour:
@@ -948,8 +949,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Stay inside. Don't make eye contact with it. If it's here, that must mean
-    that damned tree isn't far behind...
+  m_Text: Dad, I'm thirsty.
 --- !u!222 &95184442
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1168,7 +1168,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 7.922241, y: -9.006592}
+  m_AnchoredPosition: {x: 7.922119, y: -9.006592}
   m_SizeDelta: {x: 457.9291, y: 63.1974}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &104287052
@@ -1184,7 +1184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.015686274, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.14901961, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1752,8 +1752,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.4642334, y: 0}
-  m_SizeDelta: {x: 608.0141, y: 338.1361}
+  m_AnchoredPosition: {x: 4.4642334, y: 79.80997}
+  m_SizeDelta: {x: 608.0141, y: 178.5181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &172108379
 MonoBehaviour:
@@ -1768,7 +1768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7941785, g: 0.627451, b: 1, a: 0.8235294}
+  m_Color: {r: 0.69791454, g: 0.4481132, b: 1, a: 0.8235294}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3253,6 +3253,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &377857790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 377857791}
+  - component: {fileID: 377857793}
+  - component: {fileID: 377857792}
+  m_Layer: 5
+  m_Name: Name2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &377857791
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377857790}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 860913225}
+  m_Father: {fileID: 95184440}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 11.364197, y: -52.988365}
+  m_SizeDelta: {x: 208.04, y: 56.943207}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &377857792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377857790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.14901961, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "\tDad"
+--- !u!222 &377857793
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377857790}
+  m_CullTransparentMesh: 1
 --- !u!1001 &396821989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3558,8 +3638,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.4642334, y: 0}
-  m_SizeDelta: {x: 608.0141, y: 338.1361}
+  m_AnchoredPosition: {x: 4.4642334, y: 57.87002}
+  m_SizeDelta: {x: 608.0141, y: 222.3961}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &430938510
 MonoBehaviour:
@@ -4037,7 +4117,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\tVillage Dad"
+  m_Text: "\tSon"
 --- !u!222 &470584466
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4686,7 +4766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.7058824, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.14901961, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4706,8 +4786,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: My great and noble protector. Would you please fetch me a pail of water
-    from the local well? My thirst is quite unquenchable!
+  m_Text: My great and noble protector. There must be more water here. Would you
+    please fetch me a pail of water, from wherever is available? My thirst is quite
+    unquenchable!
 --- !u!222 &535078107
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5125,8 +5206,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.4642334, y: 0}
-  m_SizeDelta: {x: 608.0141, y: 338.1361}
+  m_AnchoredPosition: {x: 4.4642334, y: 40.3538}
+  m_SizeDelta: {x: 608.0141, y: 257.4284}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &601022497
 MonoBehaviour:
@@ -5749,8 +5830,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 171.12727, y: -73.938416}
-  m_SizeDelta: {x: 410.7424, y: 146.7968}
+  m_AnchoredPosition: {x: 171.12727, y: -53.01417}
+  m_SizeDelta: {x: 410.7424, y: 104.9483}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &691475227
 MonoBehaviour:
@@ -5786,8 +5867,10 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Hyeh hyeh Hyeh Hyeh! Magnificent! MAGNIFICENT! A Great Sphere Protector
-    coming to me for help?! Hyeh Hyeh Hyeh! Free of charge, not that you have any
-    money anyways! Take the poison, and bite the hand of your creator!
+    coming to me for help?! Hyeh Hyeh Hyeh! So you do have free will! It may be too
+    late for this village, but... Let's see how Arubis reacts to his favorite plant
+    withering! Take it, free of charge, not that you have any money anyways! Use
+    it, and bite the hand of your creator!
 --- !u!222 &691475228
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5871,7 +5954,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Calm yourselves. It was foretold...
+  m_Text: So you're the Great Sphere Protector...
 --- !u!222 &702626924
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6489,8 +6572,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758781174}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 48.04, y: 1.947864, z: -63.68}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 48.039997, y: 1.947864, z: -63.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1007461279}
@@ -7126,6 +7209,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6105469967883542567, guid: e8de7a054cfd06742b288dcf8e53913e, type: 3}
   m_PrefabInstance: {fileID: 643075947}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &860913224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 860913225}
+  - component: {fileID: 860913227}
+  - component: {fileID: 860913226}
+  m_Layer: 5
+  m_Name: Dialogue2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &860913225
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860913224}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 377857791}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 194.00703, y: -12.0636}
+  m_SizeDelta: {x: 410.7424, y: 23.0471}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &860913226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860913224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: I know son. I am too.
+--- !u!222 &860913227
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860913224}
+  m_CullTransparentMesh: 1
 --- !u!1 &865024874 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2604560075489722822, guid: 62355a28b41bfc844b5b483bcc043ddb, type: 3}
@@ -7651,7 +7813,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Is that a Great Sphere Protector?
+  m_Text: Please have mercy!
 --- !u!222 &895940959
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20382,7 +20544,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\tVillage Wife"
+  m_Text: "\tVillager"
 --- !u!222 &1373175443
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20503,8 +20665,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 194.00703, y: -65.95003}
-  m_SizeDelta: {x: 410.74243, y: 130.82}
+  m_AnchoredPosition: {x: 194.00703, y: -30.1509}
+  m_SizeDelta: {x: 410.7424, y: 59.2216}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1393516379
 MonoBehaviour:
@@ -20539,7 +20701,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: I wonder if it can understand us? Can it hear us? I don't see any ears...
+  m_Text: I don't know if it's even worth trying to talk to it. I'd be surprised
+    if it could even understand us... much less care about anything besides its Tree...
 --- !u!222 &1393516380
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20865,8 +21028,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 194.00703, y: -65.95003}
-  m_SizeDelta: {x: 410.74243, y: 130.82}
+  m_AnchoredPosition: {x: 194.00703, y: -32.0136}
+  m_SizeDelta: {x: 410.7424, y: 62.9473}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1465530753
 MonoBehaviour:
@@ -20901,7 +21064,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: If that really is a Great Sphere Protector... That must mean... Oh no.
+  m_Text: I'm begging you, please have mercy! Without any water, this town will die.
+    I still have so much to do in this life! Please don't let happen here what happened
+    in Northhall!
 --- !u!222 &1465530754
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23712,7 +23877,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 25.242264}
+  m_AnchoredPosition: {x: 0, y: 25.24231}
   m_SizeDelta: {x: 232.0912, y: 30}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1729387634
@@ -23728,7 +23893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.14901961, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -24457,8 +24622,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.4642334, y: 0}
-  m_SizeDelta: {x: 608.0141, y: 338.1361}
+  m_AnchoredPosition: {x: 4.4642334, y: 100.51927}
+  m_SizeDelta: {x: 608.0141, y: 137.0975}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1797039714
 MonoBehaviour:
@@ -25185,8 +25350,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 194.00703, y: -73.93844}
-  m_SizeDelta: {x: 410.7424, y: 146.7968}
+  m_AnchoredPosition: {x: 194.00703, y: -92.13472}
+  m_SizeDelta: {x: 410.7424, y: 183.1894}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1871590831
 MonoBehaviour:
@@ -25221,14 +25386,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: So, this is a "Great Sphere Protector." The harbinger of the all-powerful
-    "Tree of Life." I have read about your kind in Eliquestrian texts, but never
-    in my life did I ever imagine I'd actually come face to face with one. I suppose
+  m_Text: So, this is a Great Sphere Protector, The harbinger of the all-powerful
+    Tree of Life. I have read about your kind in Eliquestrian texts, but never in
+    my life did I ever imagine I'd actually come face to face with one. I suppose
     just by looking at the ground, your Deity intends to absorb us. So be it. If
-    this is truly how Arubis intends to make use of it, I am beyond happy! So, I
-    believe it was three buckets of water as per the texts, your last one is right
-    next to the fountain. So long Great Sphere Protector, I'm glad I was able to
-    see one in my lifetime.
+    this is truly how Arubis intends to make use of us, I am beyond happy! I have
+    done my part, stopping the villagers from leaving so they could be of use as
+    well for the great Tree of Life's nourishment. So, I believe it was three buckets
+    of water as per the texts, your last one is right next to the fountain. So long
+    Great Sphere Protector, I'm glad I was able to see one in my lifetime.
 --- !u!222 &1871590832
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25435,9 +25601,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2508820202560315990, guid: 82a59fa21fb5d85449e36f26702a0b6a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0.6547
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508820202560315990, guid: 82a59fa21fb5d85449e36f26702a0b6a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.6547
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508820202560315990, guid: 82a59fa21fb5d85449e36f26702a0b6a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0000015679
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508820202560315990, guid: 82a59fa21fb5d85449e36f26702a0b6a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508820202560315990, guid: 82a59fa21fb5d85449e36f26702a0b6a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508820202606287728, guid: 82a59fa21fb5d85449e36f26702a0b6a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 59.9376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508820202606287728, guid: 82a59fa21fb5d85449e36f26702a0b6a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 45.6837
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508820202606287728, guid: 82a59fa21fb5d85449e36f26702a0b6a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0000015561
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508820202606287728, guid: 82a59fa21fb5d85449e36f26702a0b6a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.00000066962
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508820202606287728, guid: 82a59fa21fb5d85449e36f26702a0b6a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.000000029802
+      objectReference: {fileID: 0}
     - target: {fileID: 2508820202606287729, guid: 82a59fa21fb5d85449e36f26702a0b6a, type: 3}
       propertyPath: m_Text
-      value: Are you thirsty little guy? Have some water.
+      value: No water left over here. Maybe since I helped, I will be in Arubis'
+        good graces...
       objectReference: {fileID: 0}
     - target: {fileID: 2508820202606287729, guid: 82a59fa21fb5d85449e36f26702a0b6a, type: 3}
       propertyPath: m_FontData.m_FontStyle
@@ -26214,7 +26421,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\tPriest"
+  m_Text: "\tPriest Michael"
 --- !u!222 &1997531849
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26401,8 +26608,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.4642334, y: 0}
-  m_SizeDelta: {x: 608.0141, y: 338.1361}
+  m_AnchoredPosition: {x: 4.4642334, y: 105.12163}
+  m_SizeDelta: {x: 608.0141, y: 127.8928}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2025877742
 MonoBehaviour:
@@ -27793,6 +28000,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1969416569750378657, guid: fa2b7478415293d4d8bb63e023d1b0a3, type: 3}
+      propertyPath: m_Text
+      value: Is there even a point in trying?
+      objectReference: {fileID: 0}
     - target: {fileID: 1969416570307676752, guid: fa2b7478415293d4d8bb63e023d1b0a3, type: 3}
       propertyPath: m_Name
       value: NPCWife
@@ -27854,6 +28065,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2508820202606287729, guid: 82a59fa21fb5d85449e36f26702a0b6a, type: 3}
+      propertyPath: m_Text
+      value: I... Will... Protect... You...
+      objectReference: {fileID: 0}
     - target: {fileID: 2508820202962714277, guid: 82a59fa21fb5d85449e36f26702a0b6a, type: 3}
       propertyPath: m_RootOrder
       value: 13
