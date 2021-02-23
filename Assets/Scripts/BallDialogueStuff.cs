@@ -14,6 +14,8 @@ public class BallDialogueStuff : MonoBehaviour
 
     public GameObject playerSphere;
 
+    public GameObject beginningTreeObject;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -242,12 +244,27 @@ public class BallDialogueStuff : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.G) == true)
             {
+                // Leave Conversation without poison 
+
                 Debug.Log("ConversationTextPlague should stop now");
                 conversationTextPlague.SetActive(false);
                 interactHUD.SetActive(true);
 
                 playerSphere.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             }
+            if (Input.GetKeyDown(KeyCode.P) == true)
+            {
+                // Leave conversation with poison 
+
+                Debug.Log("Got poison!");
+                conversationTextPlague.SetActive(false);
+                interactHUD.SetActive(true);
+
+                beginningTreeObject.GetComponent<BeginningTree>().GotPoison();
+
+                playerSphere.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            }
+
         }
     }
 

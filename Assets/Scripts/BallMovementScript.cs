@@ -52,7 +52,7 @@ public class BallMovementScript : MonoBehaviour
     private void Fire(float power)
     {
         // Apply Force to your ball ;-)
-        Debug.Log("Test: " + power);
+        //Debug.Log("Test: " + power);
         if (Ball != null)
         {
             Ball.GetComponent<Rigidbody>().AddForce(cameraObject.transform.forward * power, ForceMode.Impulse);

@@ -22,7 +22,7 @@ public class ReturnToTreeCheck : MonoBehaviour
     {
         if (collision.tag == "bucket")
         {
-            Debug.Log("Bucket is in return area!");
+            //Debug.Log("Bucket is in return area!");
 
             scriptHolderObject.GetComponent<BeginningTree>().ReturnBucket();
         }
@@ -32,7 +32,7 @@ public class ReturnToTreeCheck : MonoBehaviour
     {
         if (collision.tag == "bucket")
         {
-            Debug.Log("Bucket has left the return area!");
+            //Debug.Log("Bucket has left the return area!");
 
             scriptHolderObject.GetComponent<BeginningTree>().BucketLeft();
         }
