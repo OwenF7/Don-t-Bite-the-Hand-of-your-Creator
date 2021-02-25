@@ -28,4 +28,26 @@
  Civilians models: https://assetstore.unity.com/packages/3d/characters/humanoids/humans/lowpoly-medieval-peasants-free-pack-122225 
  
  To-do list: 
+ Completed: 
+ Add Villagers, 
+ Continue adding environment and buildings, 
+ Scene 2, remove bucket 1, Scene 3, remove bucket 2, 
+ Scene 2, remove wagon and collider to allow for sphere to move farther into the village, Scene 3, remove crowd and collider to allow sphere to move to the last bucket, 
+ Add other buckets, 
+ Add text to Tree on return of bucket, 
+ Add text bubbles above villagers, hinting at what they may say if interacted with, 
+ Add interaction with Villager, 
+ Add text UI when interacting with Villager, 
+ Add end state, refuse state, and secret ending state, 
+ Add secret 'posion,' 
+ Add green mystical particle effect to the Great Sphere Protector and the Tree of Life 
  
+ Not complete: 
+ Perhaps ask Kelly to voice act the Tree of Life? 
+ Perhaps ask Devin to voice act Villager 1? 
+ Maybe I voice act a Villager? Narrator? 
+ Add animation of Sphere being absorbed? 
+ For second and third scenes, change environment to show tree destruction, Ex. Fire, Smoke particle effects, Tree infestation taking over buildings, etc, 
+ Add water in bucket/particles for water? Water bucket model? 
+ Add book of text on the Tree of Life (Probably near Wellman?) detailing the origin of the Tree of Life, as well as its goal, 
+ Add music of some kinds of sound... Oops, I forgot about the second most important part of a game... Sound O_o 
