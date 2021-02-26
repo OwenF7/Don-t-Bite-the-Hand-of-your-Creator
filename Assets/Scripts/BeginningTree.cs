@@ -19,7 +19,14 @@ public class BeginningTree : MonoBehaviour
     public GameObject obedientEnding;
 
     public GameObject playerSphere;
-    public GameObject returnToTreeScriptObject; 
+    public GameObject returnToTreeScriptObject;
+
+    public GameObject level1Music;
+    public GameObject level2Music;
+    public GameObject level3Music;
+    public GameObject obedientEndingMusic;
+    public GameObject poisonEndingMusic;
+    public GameObject refusalEndingMusic; 
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +49,18 @@ public class BeginningTree : MonoBehaviour
 
         obedientEnding.SetActive(false);
 
+        level1Music.SetActive(false);
+
+        level2Music.SetActive(false);
+
+        level3Music.SetActive(false);
+
+        obedientEndingMusic.SetActive(false);
+
+        poisonEndingMusic.SetActive(false);
+
+        refusalEndingMusic.SetActive(false);
+
         playerSphere.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
     }
 
@@ -51,6 +70,8 @@ public class BeginningTree : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             //Debug.Log("It's scene One!");
+
+            level1Music.SetActive(true);
 
             if (introTreeDialogue.activeInHierarchy == true)
             {
@@ -79,28 +100,18 @@ public class BeginningTree : MonoBehaviour
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 }
 
-                else if (Input.GetKeyDown(KeyCode.O) == true)
+                else if (Input.GetKeyDown(KeyCode.G) == true)
                 {
-                    refuseEnding.SetActive(true);
-
-                    playerSphere.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition; 
-
-                    if (Input.GetKeyDown(KeyCode.O) == true)
-                    {
-                        SceneManager.LoadScene(0);
-                    }
-
-                    if (Input.GetKeyDown(KeyCode.X) == true)
-                    {
-                        Application.Quit();
-                    }
+                    RefuseEnding();
                 }
             }
         }
 
         else if (SceneManager.GetActiveScene().buildIndex == 1)
         {
-            //Debug.Log("It's scene Two!");
+            //Debug.Log("It's scene Two!"); 
+
+            level2Music.SetActive(true);
 
             if (introTreeDialogue.activeInHierarchy == true)
             {
@@ -121,19 +132,7 @@ public class BeginningTree : MonoBehaviour
 
                 else if (Input.GetKeyDown(KeyCode.G) == true)
                 {
-                    refuseEnding.SetActive(true);
-
-                    playerSphere.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
-
-                    if (Input.GetKeyDown(KeyCode.O) == true)
-                    {
-                        SceneManager.LoadScene(0);
-                    }
-
-                    if (Input.GetKeyDown(KeyCode.X) == true)
-                    {
-                        Application.Quit(); 
-                    }
+                    RefuseEnding();
                 }
             }
         }
@@ -141,6 +140,8 @@ public class BeginningTree : MonoBehaviour
         else if (SceneManager.GetActiveScene().buildIndex == 2)
         {
             //Debug.Log("It's scene Three!");
+
+            level3Music.SetActive(true);
 
             if (introTreeDialogue.activeInHierarchy == true)
             {
@@ -156,36 +157,12 @@ public class BeginningTree : MonoBehaviour
             {
                     if (Input.GetKeyDown(KeyCode.P) == true)
                     {
-                        poisonEnding.SetActive(true);
-
-                        playerSphere.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition; 
-
-                        if (Input.GetKeyDown(KeyCode.O) == true)
-                        {
-                            SceneManager.LoadScene(0); 
-                        }
-
-                        if (Input.GetKeyDown(KeyCode.X) == true)
-                        {
-                            Application.Quit(); 
-                        }
+                        PoisonEnding();
                     }
 
                     else if (Input.GetKeyDown(KeyCode.G) == true)
                     {
-                        refuseEnding.SetActive(true);
-
-                        playerSphere.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
-
-                        if (Input.GetKeyDown(KeyCode.O) == true)
-                        {
-                            SceneManager.LoadScene(0);
-                        }
-
-                        if (Input.GetKeyDown(KeyCode.X) == true)
-                        {
-                            Application.Quit();
-                        }
+                        RefuseEnding();
                     }
             }
 
@@ -193,36 +170,12 @@ public class BeginningTree : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.F) == true)
                 {
-                    obedientEnding.SetActive(true);
-
-                    playerSphere.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
-
-                    if (Input.GetKeyDown(KeyCode.O) == true)
-                    {
-                        SceneManager.LoadScene(0); 
-                    }
-
-                    if (Input.GetKeyDown(KeyCode.X) == true)
-                    {
-                        Application.Quit();
-                    }
+                    ObedientEnding(); 
                 }
 
                 else if (Input.GetKeyDown(KeyCode.G) == true)
                 {
-                    refuseEnding.SetActive(true);
-
-                    playerSphere.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
-
-                    if (Input.GetKeyDown(KeyCode.O) == true)
-                    {
-                        SceneManager.LoadScene(0);
-                    }
-
-                    if (Input.GetKeyDown(KeyCode.X) == true)
-                    {
-                        Application.Quit();
-                    }
+                    RefuseEnding();
                 }
             }
         }
@@ -261,5 +214,89 @@ public class BeginningTree : MonoBehaviour
     public void GotPoison()
     {
         poisonUICheck.SetActive(true); 
+    }
+
+    public void RefuseEnding()
+    {
+        returnToTree.SetActive(false);
+
+        refuseEnding.SetActive(true);
+
+        refusalEndingMusic.SetActive(true);
+
+        playerSphere.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
+
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            level1Music.SetActive(false);
+        }
+
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            level2Music.SetActive(false);
+        }
+
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            level3Music.SetActive(false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.R) == true)
+        {
+            SceneManager.LoadScene(0);
+
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        if (Input.GetKeyDown(KeyCode.X) == true)
+        {
+            Application.Quit();
+        }
+    }
+
+    public void ObedientEnding()
+    {
+        returnToTree.SetActive(false);
+
+        obedientEnding.SetActive(true);
+
+        level3Music.SetActive(false);
+
+        obedientEndingMusic.SetActive(true);
+
+        playerSphere.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
+
+        if (Input.GetKeyDown(KeyCode.R) == true)
+        {
+            SceneManager.LoadScene(0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.X) == true)
+        {
+            Application.Quit();
+        }
+    }
+
+    public void PoisonEnding()
+    {
+        returnToTree.SetActive(false); 
+
+        poisonEnding.SetActive(true);
+
+        level3Music.SetActive(false);
+
+        poisonEndingMusic.SetActive(true);
+
+        playerSphere.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
+
+        if (Input.GetKeyDown(KeyCode.R) == true)
+        {
+            SceneManager.LoadScene(0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.X) == true)
+        {
+            Application.Quit();
+        }
     }
 }
